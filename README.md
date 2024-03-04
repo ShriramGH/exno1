@@ -38,59 +38,57 @@ import os
 df=pd.read_csv("SAMPLEIDS.csv")
 df
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/ed03bbd1-7c97-4cd8-8cf0-3f5f9e14dcc8)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/bef00b14-e844-4890-9e94-d4f51d0a24ef)
 
 ```py
 df.isnull().sum()
 
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/57d42b69-bd5e-4c22-b8e8-6f2ae3f0404a)
-
+![image](https://github.com/ShriramGH/exno1/assets/117991122/97dace32-d9ed-4e74-9cef-be56fae1acaf)
 
 
 ```py
 df.isnull().any()
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/918f392c-8185-4d11-94f3-63785887574c)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/3f0e8ca4-8bf2-4acd-9993-c3426a0c893d)
 
 ```py
 df.dropna()
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/38354c0d-60a4-4c93-a25d-4302bad7ac62)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/997f994d-2694-422e-9056-e0cd809ea7fc)
 
 ```py
 df.fillna(0)
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/2b8ac0df-d0c1-46e1-87a4-ff8f930ff3d7)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/4bc21c2b-9c61-4a40-8b3f-16f3eb01ccd7)
 
 ```py
 df.fillna(method = 'ffill')
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/87b27264-923b-4b0d-904f-106894f0fbcd)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/51b76a1d-14e1-4fa8-b57c-67ef525c1dff)
 
 ```py
 
 df.fillna(method = 'bfill')
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/9a0df734-21b5-4b1e-baf0-2c87c82fafd7)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/63b02ffa-e193-45f3-9328-5bab4ff67ed0)
 
 ```py
 df_dropped = df.dropna()
 df_dropped
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/e7881fae-d374-4f76-bac8-481821e6461e)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/d4c59216-13f9-4dbf-be29-6be605cbd9ec)
 
 ```py
-df.fillna({'GENDER':'FEMALE','NAME':'PRIYU','ADDRESS':'POONAMALEE','M1':98,'M2':87,'M3':76,'M4':92,'TOTAL':305,'AVG':89.999999})
+df.fillna({'GENDER':'TRANS','NAME':'KANISHKAR','ADDRESS':'ARANI','M1':100,'M2':100,'M3':100,'M4':100,'TOTAL':400,'AVG':100.000000}
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/71c04f95-74c9-4971-aff9-f21a3accb70a)
-
+![image](https://github.com/ShriramGH/exno1/assets/117991122/8b895027-3b05-48b6-839a-6a1b3d9b0982)
 
 <hr><hr>
 
@@ -104,12 +102,12 @@ import pandas as pd
 ir=pd.read_csv('iris.csv')
 ir
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/32840cf3-736d-4c4b-bc8e-2d55ee7e1417)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/28516ce9-5190-4706-93df-0ae41c34bf02)
 
 ```py
 ir.describe()
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/e0ce99a8-f7b9-4ccd-9ac8-df82b53f4bc6)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/7c480d80-64d6-4c90-93c3-bbce145badd9)
 
 ```py
 import seaborn as sns
@@ -121,8 +119,7 @@ sns.boxplot(x='sepal_width',data=ir)
 ```
 
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/1c9bfcae-a2b3-4573-b204-c2590c8bc9a6)
-
+![image](https://github.com/ShriramGH/exno1/assets/117991122/150ac1be-977e-425c-a33b-5b4fcdf4c2b1)
 
 ```py
 c1=ir.sepal_width.quantile(0.25)
@@ -131,7 +128,7 @@ iq=c3-c1
 print(c3)
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/05ef4457-91f5-4a19-b413-1d4eea93b0a7)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/63cfb771-c3d2-4450-82d3-c40d37a633dc)
 
 ```py
 
@@ -139,18 +136,18 @@ rid=ir[((ir.sepal_width<(c1-1.5*iq))|(ir.sepal_width>(c3+1.5*iq)))]
 rid['sepal_width']
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/c554ef7e-012c-40f6-8b82-dbe4ae9a20b3)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/96d2eb10-9804-49ec-8dbc-a2f5f515be96)
 
 ```py
 delid=ir[~((ir.sepal_width<(c1-1.5*iq))|(ir.sepal_width>(c3+1.5*iq)))]
 delid
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/0a32cc24-1970-41a2-acf7-cb58a6955c01)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/8cc2e387-f486-4eb9-8ee8-8ef27d949a64)
 
 ```py
 sns.boxplot(x='sepal_width',data=delid)
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/19664bc6-f558-48f3-b449-fa6652c4e7ed)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/be71cab2-e501-496c-8304-312d0dbe14d8)
 
 <hr><hr>
 
@@ -167,7 +164,8 @@ dataset=pd.read_csv("heights.csv")
 dataset
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/080b6095-73da-4bee-a763-08c7a0b81a07)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/73ab03a3-e3c3-4469-b36a-2c52ee037809)
+
 
 ```py
 df = pd.read_csv("heights.csv")
@@ -181,43 +179,43 @@ iqr = q3-q1
 iqr
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/ffb0b515-5964-4405-9e0b-6d2c986c3308)
-
+![image](https://github.com/ShriramGH/exno1/assets/117991122/aa386c6f-6d2d-4c3b-b0d8-54f709b6ca54)
 
 ```py
 low = q1 - 1.5*iqr
 low
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/b68f4b97-1246-4747-9aff-06e058c94f44)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/fe9a68b7-abf1-444b-a709-6de2c19b1675)
 
 ```py
 high = q3 + 1.5*iqr
 high
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/da8aa517-c1de-4e43-91d6-ec677f8beaa5)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/4ad382ba-2c0b-4837-acef-0458c7fa2e20)
 
 
 ```py
 df1 = df[((df['height'] >=low)& (df['height'] <=high))]
 df1
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/5444510b-6eb1-4fdd-a65f-02c85bd685d4)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/77ff2159-7e82-4ef9-afc0-9473efd940ca)
 
 
 ```py
 z = np.abs(stats.zscore(df['height']))
 z
 ```
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/02efcb16-a37a-4313-8111-7396dbd21f2e)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/d246b1b0-0c49-4116-848a-fea4925cc93a)
 
 ```py
 df1 = df[z<3]
 df1
 ```
 
-![image](https://github.com/PSriVarshan/exno1/assets/114944059/fbfd480f-960d-4d51-8695-71718cc8a342)
+![image](https://github.com/ShriramGH/exno1/assets/117991122/6078b187-7bef-48d7-9358-58647a4727bc)
+
 
 <hr>
 
